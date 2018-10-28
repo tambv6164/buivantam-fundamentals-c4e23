@@ -1,0 +1,6 @@
+﻿1. Nested list là list nằm bên trong 1 list khác,
+hay nói cách khác: nested list là 1 item của 1 list lớn hơn.
+VD: zs = ["hello", 2.0, 5, [10, 20]]
+[10, 20] là nested list.
+
+2. 1 list hoàn toàn có thể chứa cả số và chuỗi.
