@@ -50,7 +50,6 @@ while True:
             total_flock += i
         print("My flock has size in total:", total_flock)
         print("I would get", total_flock, "*", price, "$ =", total_flock*price, "$")
-        break
     
     if grow_ask == "N" and shear_ask == "N" and total_flock_ask == "N":
         print("Thank for comming ^^. See you next time!")
