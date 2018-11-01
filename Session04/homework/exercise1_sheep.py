@@ -52,5 +52,6 @@ while True:
         print("I would get", total_flock, "*", price, "$ =", total_flock*price, "$")
     
     if grow_ask == "N" and shear_ask == "N" and total_flock_ask == "N":
-        print("Thank for comming ^^. See you next time!")
+        print("Oh oh oh. You don't grow it, so you can't shear it, and you don't want to know your money ... hmhm ...")
+        print("So ... Thank for comming ^^. See you next time!")
         break
