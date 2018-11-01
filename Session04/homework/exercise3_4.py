@@ -1,3 +1,4 @@
+import random
 print("Answer the following algebra question:")
 quizz = {
     "If x = 1, then what is the value of x + 1:": [2, 3, 4, 5],
@@ -14,7 +15,9 @@ keys = {
 
 while True:
     count_right = 0
-    for (k, v) in quizz.items():
+    quizz2 = list(quizz.items())
+    random.shuffle(quizz2)
+    for (k, v) in quizz2:
         print(k)
         for i in range(len(v)):
             print(i+1, v[i], sep = ". ")

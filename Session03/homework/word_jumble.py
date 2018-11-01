@@ -1,17 +1,25 @@
 import random
 word_list = ["champion", "meticulous", "hexagon", "handsome", "beautiful", "chicken"]
 
-random_word = random.choice(word_list)
-word = list(random_word)
-random.shuffle(word)
+count_wrong = 0
 
-for letter in word:
-    print(letter, end = " ")
-print()
+while True:
+    random_word = random.choice(word_list)
+    word = list(random_word)
+    random.shuffle(word)
 
-answer = input("Your answer: ")
+    for letter in word:
+        print(letter, end = " ")
+    print()
 
-if answer == random_word:
-    print("Hura!")
-else:
-    print("Sorry. Your answer is incorrect.")
+    answer = input("Your answer: ")
+
+    if answer == random_word:
+        print("Hura!")
+        count_wrong = 0
+    else:
+        print("Sorry. Your answer is incorrect.")
+        count_wrong += 1
+    if count_wrong == 5:
+        print("You're wrong too much. Please come back later")
+        break
