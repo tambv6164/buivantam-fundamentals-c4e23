@@ -18,6 +18,8 @@ def print_mysheep():
 
 while True:
     print_mysheep()
+    if all(i <= 8 for i in mysheeps):
+        print("Your flock is too low. Please grow it for shearing in the future.")
 
     grow_ask = input("Grow one more month?: Y for Yes or N for No: ").upper()
     typeagain(grow_ask)
@@ -29,7 +31,7 @@ while True:
         print("MONTH", month)
     print_mysheep()
 
-    if not all(i <= 8 for i in mysheeps):
+    if not (all(i <= 8 for i in mysheeps)):
         print("Now, my biggest sheep has size", max(mysheeps), ".")
         shear_ask = input("Let shear it. Y for Yes or N for No: ").upper()
         typeagain(shear_ask)
@@ -38,7 +40,7 @@ while True:
             print("After shearing:")
         print_mysheep()
     else:  
-        print("Your flock is too low. Please grow it for shearing in the future.")
+        print("You can't shear. Because you don't grow the flock.")
         shear_ask = "N"
 
     total_flock_ask = input("Wanna know your total money will get now? Y for Yes or N for No: ").upper()
