@@ -1,0 +1,15 @@
+﻿1. Email Automation
+pip install: cài thư viện trong python
+pip là package manager của python
+
+1. Data base
+(có tổ chức)
++ SQL: chặt chẽ, lưu thông tin quan trọng. chậm thay đổi và scale
+cần viết thêm Query
++ No.SQL: ngược lại. viết luôn bằng python
+
+1. mlab
+mongodb://<dbuser>:<dbpassword>@ds115579.mlab.com:15579/c4e23-blog
+@ds115579.mlab.com: host
+15579: port
+c4e23-blog: db name
