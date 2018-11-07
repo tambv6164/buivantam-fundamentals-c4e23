@@ -20,7 +20,7 @@ for (k, v) in refs.items():
 ref_count = list(refs.values())
 ref_names = list(refs.keys())
 
-pyplot.pie(ref_count, labels=ref_names, autopct="%.3f %%", shadow=True, explode=[0, 0, 0.2, 0])
+pyplot.pie(ref_count, labels=ref_names, autopct="%.3f %%", shadow=True)
 pyplot.title("References from Events, Ads and Word of Mouth")
 pyplot.axis("equal")
 pyplot.show()

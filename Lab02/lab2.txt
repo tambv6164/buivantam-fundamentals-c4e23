@@ -1,0 +1,8 @@
+﻿tag:
+attribute: là đặc tính cho thêm vào thẻ để thể hiện 1 chức năng cụ thể
+content/string: nội dung người dùng nhìn thấy, nội dung bên trong thẻ tag
+target="#": chuyển href sang 1 tab mới
+
+lấy dữ liệu tự động: web scaping/data crawling
+binary
+cài anaconda3
