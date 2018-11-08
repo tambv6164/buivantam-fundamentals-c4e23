@@ -15,7 +15,8 @@ table = soup.find("table", id="tableContent").find_all("tr")
 
 tableheader = []
 for i in header:
-    a = i.text.strip()
+    a = i.text
+    a = " ".join(a.split())
     tableheader.append(a)
 tableheader.pop()
 
@@ -26,7 +27,7 @@ for td in table:
     for i in a:
         b = i.text.strip()
         a_list.append(b)
-    if a_list != [] and (not all(v == "" for v in a_list)):
+    if not all(v == "" for v in a_list):
         a_list = a_list[:5]
         tablecontent.append(a_list)
 
