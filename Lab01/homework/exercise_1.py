@@ -14,15 +14,17 @@ sickness_list = ["thương hàn", "kiết lỵ", "tiêu chảy"]
 sickness = choice(sickness_list)
 symptom = "đau bụng"
 
-def job():
-    content = template.replace("{{symptom}}", symptom).replace("{{sick}}", sickness)
-    message = Message("Đơn xin nghỉ làm", to="tambv6164@gmail.com", html=content)
-    gmail.send(message)
+# def job():
+content = template.replace("{{symptom}}", symptom).replace("{{sick}}", sickness)
+message = Message("Đơn xin nghỉ làm", to="tambv6164@gmail.com", html=content)
+while True:
+    if datetime.now().hour == 7:
+        gmail.send(message)
 
-x = datetime.today()
-y = x.replace(day=x.day+1, hour=7, minute=0, second=0, microsecond=0)
-delta = y - x
-secs = delta.seconds + 1
+# x = datetime.today()
+# y = x.replace(day=x.day+1, hour=7, minute=0, second=0, microsecond=0)
+# delta = y - x
+# secs = delta.seconds + 1
 
-t = Timer(secs, job)
-t.start()
+# t = Timer(secs, job)
+# t.start()

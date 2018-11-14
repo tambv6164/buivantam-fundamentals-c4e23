@@ -1,0 +1,33 @@
+﻿1. Why should we use functions at all?
+- Hàm có thể tạo 1 lần và sử dụng nhiều lần ở nhiều nơi,
+tiết kiệm thời gian và làm ngắn code.
+- Code được tách thành từng khúc, thuận tiện cho chỉnh sửa nếu code lỗi.
+
+2. How to define/declare a function?
+Hàm được tạo bằng câu lệnh def:
+	def tên hàm(tên các biến nếu có):
+		thủ tục hàm sẽ thực hiện
+
+3. How to call/use a function?
+Gọi hàm bằng cách gọi tên hàm đó kèm các biến bên trong ngoặc nếu có.
+
+4. What is return, why and how do we use it?
+Các biến hoặc 1 số kết quả trong hàm sẽ tiêu biến sau khi hàm được sử dụng,
+nên dùng return để trả lại các kết quả hoặc biến đó để dùng tiếp nếu cần.
+
+5. Do we have to use return in ​every​ function?
+Không cần thiết dùng return trong tất cả các hàm.
+
+6. What are function arguments/parameters, why and how we use it?
+Biến của hàm là các giá trị được sử dụng trong hàm đó để nó hoạt động.
+Chúng ta cần nó khi các đầu vào của hàm đó không phải là cố định, 
+hoặc khi được người dùng nhập giá trị vào.
+
+7. How to use function from a different file other than our currently working
+file?
+Kết nối đến thư mục chứa file chứa hàm.
+Sau đó dùng 1 trong 2 cách:
+- import file chứa hàm vào file đang làm việc. 
+Gọi hàm bằng cách: tên file. tên hàm
+- from tên file import tên hàm
+Gọi hàm bằng cách gọi tên hàm là được.
