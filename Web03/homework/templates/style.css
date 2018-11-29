@@ -1,0 +1,24 @@
+label, input, button {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+    display: block;
+}
+input {
+    width: 400px;
+    border-radius: 3px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+}
+form {
+    width: 40%;
+    padding: 100px;
+    margin: auto;
+}
+button {
+    border-radius: 3px;
+    border: none;
+    background: rgb(46, 46, 243);
+    color: white;
+    width: 60px;
+    height: 25px;
+}
